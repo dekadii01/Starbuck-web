@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website starbuck</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="logo.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's new</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2>It's not just coffee <br>its <span>Starbucks</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt aliquid quidem reprehenderit recusandae commodi soluta quod totam, earum deleniti unde laudantium doloremque quasi ipsum numquam labore quas magni. Molestias, atque?</p>
+                <a href="#">Learn more</a>                
+            </div>
+            <div class="imgBox">
+                    <img src="img1.png" class="Starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="thumb1.png" class="thumb1"></li>
+            <li><img src="thumb2.png" class="thumb2"></li>
+            <li><img src="thumb3.png" class="thumb3"></li>
+        </ul>
+        <ul class="sci">
+                <li><a href="#"><img src="facebook.png" alt=""></a></li>
+                <li><a href="#"><img src="twitter.png" alt=""></a></li>
+                <li><a href="#"><img src="instagram.png" alt=""></a></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        const thumb1 = document.querySelector('.thumb1'); 
+        thumb1.addEventListener('click', function(){
+            document.querySelector('.Starbucks').src="img1.png";
+            document.querySelector('.circle').style.background = '#017143';
+        });
+        const thumb2= document.querySelector('.thumb2'); 
+        thumb2.addEventListener('click', function(){
+            document.querySelector('.Starbucks').src="img2.png";
+            document.querySelector('.circle').style.background = '#eb7495';
+        });
+        const thumb3 = document.querySelector('.thumb3'); 
+        thumb3.addEventListener('click', function(){
+            document.querySelector('.Starbucks').src="img3.png";
+            document.querySelector('.circle').style.background = '#d752b1';
+        });
+    </script>
+
+</body>
+</html>
